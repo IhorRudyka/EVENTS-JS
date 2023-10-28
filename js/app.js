@@ -19,15 +19,12 @@ createBTN.addEventListener("click", function() {
     h2.innerText = todoTitle.value;
     p.innerText = todoText.value;
         // Проверка на наличие информации в тайтле и теле заметки
-    if(h2.innerText === '') {
-        // h2.style.color = 'gray';
-        // h2.innerText = "Unknown Title"
-        miniContainer.style.display = 'none';
-    }
-    if(p.innerText === '') {
-        // p.style.color = 'gray';
-        // p.innerText = "Unknown Text"
-        miniContainer.style.display = 'none';
+     if(todoTitle.value === '' || todoText.value === '') {
+            alert("Please fill the text area")
+            miniContainer.style.display = 'none'
+        } else {
+            miniContainer.style.display = 'block'
+        }
         // Удаление заметки при нажатии на кнопку delete
     deleteBTN.addEventListener("click", function() {
         miniContainer.remove();
