@@ -20,13 +20,14 @@ createBTN.addEventListener("click", function() {
     p.innerText = todoText.value;
         // Проверка на наличие информации в тайтле и теле заметки
     if(h2.innerText === '') {
-        h2.style.color = 'gray';
-        h2.innerText = "Unknown Title"
+        // h2.style.color = 'gray';
+        // h2.innerText = "Unknown Title"
+        miniContainer.style.display = 'none';
     }
     if(p.innerText === '') {
-        p.style.color = 'gray';
-        p.innerText = "Unknown Text"
-    }
+        // p.style.color = 'gray';
+        // p.innerText = "Unknown Text"
+        miniContainer.style.display = 'none';
         // Удаление заметки при нажатии на кнопку delete
     deleteBTN.addEventListener("click", function() {
         miniContainer.remove();
