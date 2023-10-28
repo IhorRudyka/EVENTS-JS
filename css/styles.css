@@ -49,6 +49,7 @@ button:hover {
 .createBTN {
     margin: 40px 0;
     background-color: #7c2ada;
+    cursor: pointer;
 }
 .right-side {
     width: 700px;
